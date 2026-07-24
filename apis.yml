@@ -1,7 +1,26 @@
 aid: bluelayer
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bluelayer.png
 name: BlueLayer
-description: BlueLayer is a company surfaced as a portfolio company of point-nine and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  BlueLayer is an operating-system platform for carbon-project developers, providing infrastructure to
+  collect project data, run automated digital measurement, reporting and verification (dMRV), manage the
+  carbon-credit lifecycle from estimation through retirement, and generate revenue by distributing and
+  selling credits while reducing compliance burden. The product spans project operations, a revenue engine,
+  credit management, a stakeholder DataHub, customizable dashboards, and integrations with registries, CRMs,
+  accounting software, and ERPs. Backed by Point Nine, BlueLayer was added to the API Evangelist network as
+  a portfolio-lead stub; as of this enrichment pass no public developer API, documentation, SDKs, or
+  OpenAPI surface was found — the platform is accessed via its hosted web application.
 url: https://raw.githubusercontent.com/api-evangelist/bluelayer/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Carbon Credits
+- Climate
+- Sustainability
+- Carbon Markets
+- dMRV
+- Verification
+- ESG
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/bluelayer-domain-security.yml
 - type: Website
   url: https://bluelayer.io
+- type: Blog
+  url: https://bluelayer.io/blogs/
+- type: Login
+  url: https://app.bluelayer.io
+- type: PrivacyPolicy
+  url: https://bluelayer.io/pdfs/privacy-policy_250725.pdf
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
